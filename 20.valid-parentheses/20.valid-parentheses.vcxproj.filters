@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1.two-sum.cpp">
+    <ClCompile Include="20.valid-parentheses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Solution.cpp">

@@ -1,8 +1,7 @@
-// 1.two-sum.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 20.valid-parentheses.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
-#include <vector>
 #include <string>
 
 #include "Solution.h"
@@ -10,28 +9,13 @@
 using namespace std;
 
 int main() {
-	vector<int> nums{ 2, 7, 11, 15 };
-	int target = 9;
+	string input = "()()[[{{()}}]]";
 
 	Solution solution;
-	vector<int> response = solution.twoSum(nums, target);
+	bool response = solution.isValid(input);
 
-	cout << "Problem 0001.two-sum" << endl;
-
-	if (response.empty()) {
-		cout << "There isn't indices of the two numbers such that they add up to the target" << endl;
-	}
-	else {
-		cout << "Solution: [";
-
-		for (auto& i : response) {
-			cout << " " << i << " ";
-		}
-
-		cout << "]";
-	}
-
-	return 0;
+	cout << "Problem 0020.Valid Parentheses" << endl;
+	cout << "Solution: " << boolalpha << response << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
